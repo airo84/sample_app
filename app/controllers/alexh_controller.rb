@@ -16,6 +16,12 @@ class AlexhController < ApplicationController
     render json: {}
   end
   
+  def facebook_fbchat_test1_new
+    puts "Maxim -- AlexhController -- send_message_test_xmpp4r_facebook_new"
+    Invitations::FBChatSender::send_message_test_xmpp4r_facebook_new
+    render json: {}
+  end
+  
   def facebook_fbchat_test2
     puts "Maxim -- AlexhController -- facebook_fbchat_test2"
     Invitations::FBChatSender::send_message_test_FacebookChat
