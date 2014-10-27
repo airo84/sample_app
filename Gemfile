@@ -11,6 +11,7 @@ gem 'premailer-rails' # for email inline-css preprocessing
 gem 'nokogiri' # required for premailer-rails
 gem 'cancan' # for user roles
 gem 'facebook_chat'
+gem 'xmpp4r_facebook' # for Facebook chat messages
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
