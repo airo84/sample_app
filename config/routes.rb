@@ -6,12 +6,6 @@ SampleApp::Application.routes.draw do
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/contact', to: 'static_pages#contact', via: 'get'
 
-  match 'facebook_fbchat_test1'                 => 'alexh#facebook_fbchat_test1',    :via=> :get
-  match 'facebook_fbchat_test1_no_tls'          => 'alexh#facebook_fbchat_test1_no_tls',    :via=> :get
-  match 'facebook_fbchat_test1_new'             => 'alexh#facebook_fbchat_test1_new',    :via=> :get
-  
-  match 'facebook_fbchat_test2'                 => 'alexh#facebook_fbchat_test2',    :via=> :get
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
