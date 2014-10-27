@@ -88,23 +88,23 @@ class Invitations::FBChatSender
   
   
   def self.send_message_test_xmpp4r_facebook_new()
-	message = Jabber::Message.new '-100007252308090@chat.facebook.com', "send_message_test_xmpp4r_facebook_new -- hello old friend! (sent from xmpp4r_facebook/Maxim)!"
+	message = Jabber::Message.new '-100007252308090@chat.facebook.com', "test -- hello old friend! (sent from xmpp4r_facebook/Maxim)!"
 	message.subject = 'message from ruby!'
-	puts "send_message_test_xmpp4r_facebook_new"
+	puts "Testing xmpp4r_facebook"
 
 	client = Jabber::Client.new Jabber::JID.new('-100008335089304@chat.facebook.com')
-	sleep 2
+	#sleep 2
 	client.connect
-	sleep 2
-	puts "send_message_test_xmpp4r_facebook_new -- client.connected"
+	#sleep 2
+	puts "Testing xmpp4r_facebook -- client.connected"
 	sender_access_token = 'CAAGkN1BKSV0BAMJiwgcTf9KoPb8MARIg18BMGypq0Ab8tLHJxRPxH8xP8PHHtsERO2fVUOWc64DOR9fjbXgb6eXXH75AyysT5PW7i66KSAZCOyWzsmqYwxKVYYGHU4f1wZCQHNwZAQ1ZBkosQHQV70Koy6aiCqtk44ZCPnZBZA4IJugWYyxO6yYESclON9Hd9AvBrDSg2E3vb7tIH9bAajh'
-	sleep 2
+
 	client.auth_sasl(Jabber::SASL::XFacebookPlatform.new(client, '462032453912925', sender_access_token, 'c47c19ae03443f9e9f8fea3e8a06a1f7'), nil)
-	puts "send_message_test_xmpp4r_facebook_new -- auth_sasl complete"
-	sleep 2
+	puts "Testing xmpp4r_facebook -- auth_sasl complete"
+
 	client.send message
-	puts "send_message_test_xmpp4r_facebook_new -- message sent"
-	sleep 2
+	puts "Testing xmpp4r_facebook -- message sent"
+	sleep 1
 	client.close
   end
   
