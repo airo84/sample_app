@@ -1,0 +1,13 @@
+=> Booting WEBrick
+=> Rails 4.0.2 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+
+
+Started GET "/facebook_fbchat_test2" for 127.0.0.1 at 2014-10-27 11:38:51 +0300
+Processing by AlexhController#facebook_fbchat_test2 as HTML
+Maxim -- AlexhController -- facebook_fbchat_test2
+Maxim -- FBChatSender -- send_message_test_2 -- SENT!
+Completed 200 OK in 2251ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+Exiting
+Terminate batch job (Y/N)? 
